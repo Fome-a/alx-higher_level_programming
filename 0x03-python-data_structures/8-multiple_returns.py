@@ -3,7 +3,7 @@ def multiple_returns(sentence):
     first_ch = sentence[0]
 
     if length is None:
-        first_ch = None
-
-    tuple_a = (length, first_ch)
+        tuple_a = (length, None)
+    else:
+        tuple_a = (length, first_ch)
     return(tuple_a)
