@@ -11,7 +11,7 @@ if __name__ == "__main__":
         print("{:d} argument:".format(Count))
         print("{:d} : {:s}".format(index, sys.argv[1]))
     else:
-        print("{} argument: {}".format(Count))
+        print("{} argument:".format(Count))
         while index <= Count:
             print("{:d} : {:s}". format(index, sys.argv[index]))
             index += 1
