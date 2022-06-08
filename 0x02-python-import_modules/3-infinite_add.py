@@ -1,11 +1,15 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
-    argv = sys.argv[1:]
-    argv_count = len(argv)
-    index = 1
-    res = 0
-    while index <= argv_count:
-        res += int(sys.argv[index])
-        index += 1
-    print("{:d}".format(res))
+    #!/usr/bin/python3
+if __name__ == "__main__":
+    import sys
+    i = len(sys.argv) - 1
+
+    if i == 0:
+        print("{}".format(i))
+    elif i == 1:
+        print("{}".format(i))
+    else:
+        sum(sys.argv)
+    
