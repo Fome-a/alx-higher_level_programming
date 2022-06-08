@@ -3,9 +3,9 @@ if __name__ == "__main__":
     import sys
     Count = len(sys.argv)
 
-    if Count == 0:
+    if Count == 1:
         print("0 arguments")
-    elif Count == 1:
+    elif Count == 2:
         print("1 argument:")
         print("1 : {:s}".format(sys.argv[1]))
     else:
