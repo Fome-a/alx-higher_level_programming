@@ -14,11 +14,12 @@ if __name__ == "__main__":
     a = sys.argv[1]
     b = sys.argv[3]
 
+    from calculator_1 import add, sub, mul, div
     if operator == '+':
-        print("{:d} {} {:d} = {}".format(a, b, add(a, b)))
+        print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
     if operator == '-':
-        print("{:d} {} {:d} = {}".format(a, b, sub(a, b)))
+        print("{:d} - {:d} = {:d}".format(a, b, sub(a, b)))
     if operator == '*':
-        print("{:d} {} {:d} = {}".format(a, b, mul(a, b)))
+        print("{:d} * {:d} = {:d}".format(a, b, mul(a, b)))
     if operator == '/':
-        print("{:d} {} {:d} = {}".format(a, b, div(a, b)))
+        print("{:d} / {:d} = {:d}".format(a, b, div(a, b)))
