@@ -2,24 +2,26 @@
 #include "lists.h"
 /**
  * print_dlistint -  a function
- * @h: the head of list
- *
+ * head: the head of list
+ * struct dlistint_t - temp node for traversing
  * Return: number element of the link list
  */
 
-void print_dlistint_t(struct dlistint_t *temp);
+void print_dlistint(void)
 {
-    temp = malloc(sizeof(struct dlistint));
-    
-    if (head != Null)
-    {
-        temp = head;
-        while(temp->next != null)
-            {
-                printf("%d \n", temp->n);
-                temp = temp->next
-            }
-    }   
-    return(temp)
+	struct dlistint_t *temp;
+	int no_elem = 0;
+
+	if (head != Null)
+	{
+		temp = head;
+		while (temp->next != null)
+		{
+			printf("%d \n", temp->n);
+			no_elem++;
+			temp = temp->next;
+		}
+	}
+	return (no_elem);
 
 }
