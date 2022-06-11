@@ -1,7 +1,10 @@
-#!/usr/bin/python3
+from hashlib import new
+
+
 def multiply_by_2(a_dictionary):
-    new_dict = a_dictionary.copy
-    lists_1 = new_dict.values()
-    for i in lists_1:
-        result = lists_1[i] * 2
-    return(result)
+    new_dir = a_dictionary.copy()
+
+    for key in new_dir:
+        new_dir[key] *= 2
+
+    return (new_dir)
