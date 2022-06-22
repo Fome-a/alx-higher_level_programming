@@ -12,7 +12,7 @@ class Square:
 
     def __init__(self, size=0):
         """Constructor of a Square with the size"""
-        self.size = size
+        self.__size = size
 
     @property
     def size(self):
