@@ -1,3 +1,10 @@
+#!/usr/bin/python3
+"""
+This module defines a Square class
+"""
+
+
 class Square:
-    """ Creating a square class """
+    """This class is a squeleton for Square
+    """
     pass
