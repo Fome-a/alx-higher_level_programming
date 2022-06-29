@@ -30,3 +30,4 @@ def matrix_divided(matrix, div):
             c_resList.append(round(valor/div, 2))
         results_matrix.append(c_resList)
     return results_matrix
+    
