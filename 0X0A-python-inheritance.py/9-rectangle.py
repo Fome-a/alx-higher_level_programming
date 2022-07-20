@@ -8,11 +8,10 @@ class Rectangle(BaseGeometry):
     """Initialization of attributes """
 
     def __init__(self,width,height):
-        self.integer_validator = ("width",width)
+        super().__init__()
         self.__width = width
-        self.integer_validator = ("height",height)
         self.__height = height
-
+        
     def __str__(self):
         """Returns area of Rectangle"""
         return(f"[Rectangle] {self.__width}/{self.__height}")
