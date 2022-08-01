@@ -1,9 +1,6 @@
 #!/usr/bin/python3
 """Creating a base class"""
 
-import json
-import csv
-import os
 class Base:
     """defining class attribute"""
     __nb_objects = 0
