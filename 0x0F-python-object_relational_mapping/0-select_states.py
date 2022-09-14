@@ -7,13 +7,13 @@ import sys
 if __name__ == "__main__":
     import MySQLdb
     if (len(sys.argv)== 4):
-        user=sys.argv[1]
+        users=sys.argv[1]
         password=sys.argv[2]
         database=sys.argv[3]
     db = MySQLdb.connect(
         host="localhost",
         port=3306,
-        user=user,
+        user=users,
         passwd=password,
         db=database)
     cur=db.cursor()
