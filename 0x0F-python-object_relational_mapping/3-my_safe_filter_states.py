@@ -20,7 +20,7 @@ if __name__ == "__main__":
             db=database,
             charset="utf8")
         cur = conn.cursor()
-        cur.execute("SELEct * FROM states WHERE name LIKE %s ORDER BY id ASC".format(name_search))
+        cur.execute("SELEct * FROM states WHERE name LIKE {%s} ORDER BY id ASC".format(name_search))
         query_rows=cur.fetchall()
         for row in query_rows:
             print(row) 
