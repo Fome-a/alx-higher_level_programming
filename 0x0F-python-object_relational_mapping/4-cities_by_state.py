@@ -19,7 +19,7 @@ if __name__ == "__main__":
             db=database,
             charset="utf8")
         cur = conn.cursor()
-        cur.execute("SELECT states.name, cities.name FROM states, cities WHERE ID = state_id ORDER BY state_id ASC")
+        cur.execute("SELECT states.name, cities.name FROM states, cities WHERE id = state_id ORDER BY state_id ASC;")
         query_rows=cur.fetchall()
         for row in query_rows:
             print(row) 
