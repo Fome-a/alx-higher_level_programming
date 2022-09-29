@@ -11,7 +11,6 @@ if __name__ == "__main__":
         user = sys.argv[1]
         password = sys.argv[2]
         database = sys.argv[3]
-        name_search= sys.argv[4]
         conn = MySQLdb.connect(
             host="localhost",
             port=3306,
@@ -20,7 +19,7 @@ if __name__ == "__main__":
             db=database,
             charset="utf8")
         cur = conn.cursor()
-        cur.execute("SELEct * FROM states WHERE name LIKE '%s'".format(sys.argv[4]))
+        cur.execute("SELECT states.name, cities.names FROM states INNER JOIN cities ON cities.id=states.id ORDER BY cities.id ASC")
         query_rows=cur.fetchall()
         for row in query_rows:
             print(row) 
