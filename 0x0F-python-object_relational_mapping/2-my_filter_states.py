@@ -22,7 +22,7 @@ if __name__ == "__main__":
         cur = conn.cursor()
         id=input("Enter State name: ")
         my_data=(id,)
-        cur.execute("SELEct * FROM states WHERE name LIKE '%{}%'".format(sys.argv[4]))
+        cur.execute("SELEct * FROM states WHERE name LIKE '{}'".format(sys.argv[4]))
         query_rows=cur.fetchall()
         for row in query_rows:
             print(row) 
