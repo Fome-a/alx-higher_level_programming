@@ -19,7 +19,7 @@ if __name__ == "__main__":
             db=database,
             charset="utf8")
         cur = conn.cursor()
-        cur.execute("SELECT states.name, cities.names FROM states INNER JOIN cities ON cities.id=states.id ORDER BY cities.id ASC")
+        cur.execute("SELECT * FROM states, cities WHERE states.id = cities.id ORDER BY id ASC")
         query_rows=cur.fetchall()
         for row in query_rows:
             print(row) 
